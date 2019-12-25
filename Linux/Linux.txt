@@ -1,0 +1,34 @@
+What is Linux?
+
+Linux Shell or "Terminal": is a place where you can see and write the commands
+Shell: Is a part that interprets
+OS: Is a place where you execute the commands
+--------------------------------------------------------------------------------------
+
+Basic Commands:
+
+sudo:superuserdo
+cd: go to a directory
+ls: show a directory-listing
+ls -a: view hidden files
+mkdir: make a directory
+touch: creates emptyfile or updates access and modif time
+cp: copy a file
+mv: move/rename files/directory
+rm: eliminate files
+chomd: change file read/write/execute permissions (rwx)
+pwd: give the absolute path where you are
+echo: help move some data,normally text a file
+cat: display the contest of a file
+$: proceding variable name
+df: know the disk usage of a file in the system
+wc: print line, word and byte counts
+find: search for files
+exit: exit from the terminal
+whoami: print userid
+
+----------------------------------------------------------------------------
+autocomplete: opens with tab + ↑/↓ + enter
+ctrl + c: stop the terminal safely
+ctrl + l: clean screen
+ctrl + d: exit of the terminal

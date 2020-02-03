@@ -3,6 +3,7 @@ What is Linux?
 Linux Shell or "Terminal": is a place where you can see and write the commands
 Shell: Is a part that interprets
 OS: Is a place where you execute the commands
+
 --------------------------------------------------------------------------------------
 
 Basic Commands:
@@ -28,6 +29,7 @@ exit: exit from the terminal
 whoami: print userid
 
 ----------------------------------------------------------------------------
+
 autocomplete: opens with tab + ↑/↓ + enter
 ctrl + c: stop the terminal safely
 ctrl + l: clean screen

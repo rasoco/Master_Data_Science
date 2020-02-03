@@ -1,0 +1,39 @@
+# Amadeus Challenge
+
+*.csv.bz2
+*.csv
+*.ipynb
+
+# Cheat Sheet
+
+*.pdf
+
+
+# Git and Github
+
+*.pdf
+*.txt
+
+# Linux
+
+
+
+# Python
+*.ipynb
+*.csv
+*.pdf
+*.zip
+*.html
+
+# R
+
+*.R
+
+
+*01_intro_to_DS_toolkit_inclass.ipynb
+*02-loading_and_saving_data_empty.ipynb
+*03-merge_concatenate_transform_empty.ipynb
+*04-group_by_empty.ipynb
+*06_exercises-class.ipynb
+*11_exercises.ipynb
+

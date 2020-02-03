@@ -1,2 +1,2 @@
-# master_data_science
+# Master Data Science in KSchool
 

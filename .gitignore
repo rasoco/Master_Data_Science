@@ -1,11 +1,5 @@
 # Amadeus Challenge
-*.Untitled.ipynb
-*.Untitled1.ipynb
-*.ch_01-Empty.ipynb
-*.ch_02-Empty.ipynb
-*.ch_05-empty.ipynb
-*.top_airports.csv
-
+*.ipynb
 *.csv.bz2
 *.csv
 
@@ -30,6 +24,7 @@
 *.pdf
 *.zip
 *.html
+!fifa_data.ipynb
 
 # R
 

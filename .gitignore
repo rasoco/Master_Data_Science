@@ -24,7 +24,7 @@
 *.pdf
 *.zip
 *.html
-!fifa_data.ipynb
+!/Projects/fifa_data.ipynb
 
 # R
 

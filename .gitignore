@@ -1,8 +1,14 @@
 # Amadeus Challenge
+*.Untitled.ipynb
+*.Untitled1.ipynb
+*.ch_01-Empty.ipynb
+*.ch_02-Empty.ipynb
+*.ch_05-empty.ipynb
+*.top_airports.csv
 
 *.csv.bz2
 *.csv
-*.ipynb
+
 
 # Cheat Sheet
 
@@ -19,7 +25,7 @@
 
 
 # Python
-*.ipynb
+
 *.csv
 *.pdf
 *.zip

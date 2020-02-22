@@ -26,7 +26,8 @@ Amadeus Challenge/
 *.pdf
 *.zip
 *.html
-/Projects/fifa_data.ipynb
+.ipynb_checkpoints/
+
 
 
 # R

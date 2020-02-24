@@ -21,7 +21,25 @@ Amadeus Challenge/
 
 #Python 
 Notebook/
-.ipynb_checkpoints/
+*.ipynb_checkpoints/01-intro_to_DS_toolkit_clean-checkpoint.ipynb
+*.ipynb_checkpoints/01_intro_to_DS_toolkit_inclass-checkpoint.ipynb
+*.ipynb_checkpoints/02-loading_and_saving_data_empty-checkpoint.ipynb
+*.ipynb_checkpoints/02_flow_control_empty-checkpoint.ipynb
+*.ipynb_checkpoints/03-merge_concatenate_transform_empty-checkpoint.ipynb
+*.ipynb_checkpoints/04-group_by_empty-checkpoint.ipynb
+*.ipynb_checkpoints/06-intro_to_pandas_practical_empty-checkpoint.ipynb
+*.ipynb_checkpoints/06-intro_to_pandas_practical_inclass-checkpoint.ipynb
+*.ipynb_checkpoints/06_exercises-class-checkpoint.ipynb
+*.ipynb_checkpoints/07_working_with_files-clean-checkpoint.ipynb
+*.ipynb_checkpoints/05-visualization_introduction-checkpoint.ipynb
+*.ipynb_checkpoints/05-visualization_introduction_inclass-checkpoint.ipynb
+*.ipynb_checkpoints/11_exercises-checkpoint.ipynb
+*.ipynb_checkpoints/Project-checkpoint.ipynb
+*.ipynb_checkpoints/Untitled-checkpoint.ipynb
+*.ipynb_checkpoints/05-visualization_introduction-checkpoint.ipynb
+*.ipynb_checkpoints/05-visualization_introduction_inclass-checkpoint.ipynb
+
+
 
 
 

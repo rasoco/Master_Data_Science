@@ -20,13 +20,6 @@ Amadeus Challenge/
 # Linux
 
 
-# Python
-
-*.csv
-*.pdf
-*.zip
-*.html
-.ipynb_checkpoints/
 
 
 

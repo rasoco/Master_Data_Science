@@ -1,0 +1,54 @@
+Step of Linear Regression in Machine Learning
+
+from sklearn.linear_model import LinearRegression #import of library
+
+reg = LinearRegression() #create an instace
+
+from sklearn.model_selection import train_test_split #import of library train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(X,y, test_size= 0.2) # divide into test an train
+
+reg.fit(X_train,y_train) # training my model 
+
+reg.coef # m (slope of a line)
+
+reg.intercept_ # when x=0, what is the value of y
+
+reg.predict([values]) #make predictions
+
+xtest_predict = reg.predict(X_test))
+
+MAE metrics in sklearn:
+
+from sklearn.metrics import mean_absolute_error
+
+mean_aboslute_error(reg.predict(X_test), y_test)
+
+MAPE metrics:
+np.mean(np.abs(xtest_predict-y_test)/y_test)
+
+RMSE metrics:
+from sklearn.metrics import mean_squared_error
+from math import sqrt
+
+np.sqrt(np.mean((xtest_predict-y_test)**2))
+# np.sqrt(np.mean((predictions-targets)**2))
+
+Step of k Nearest Neighboors in Machine Learning
+
+k: number of neighbors
+
+from sklearn.neighbors import KNeighborsRegressor #import library
+
+regk = KNeighborsRegressor(n_neighbors=k)
+
+regk.fit(X_train,y_train) 
+
+mean_absolute_error(regk.predict(X_test),y_test)
+
+Cross Validation: Aim give a metrics of our model. Robust metric. Take your dataset and split into n random parts. 
+
+from sklearn.model_selection import cross_val_score
+
+cross_val_score(reg,X,y,cv=5,scoring="neg_mean_squared_error") #give an array negative, change a abs to convert positive
+np.mean(np.sqrt(np.abs(cross_val_score(reg,X,y,cv=5,scoring="neg_mean_squared_error"))

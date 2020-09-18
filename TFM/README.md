@@ -283,8 +283,8 @@ Tiene una buena precisión global de 0.88.
 
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
-|       | travel_minutes distance|   1        |    0.89    |    0.80   |  0.84    |  1837 |   
-|4     |   ageRange    |   2        |    0.83  |   0.90  |   0.86  |  1927  |      
+|       | travel_minutes distance|   1        |    0.89    |   0.79   |  0.84    |  1837 |   
+|4     |   ageRange    |   2        |   0.82 |   0.91  |   0.86  |  1927  |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  1928   |  
 
 

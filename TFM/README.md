@@ -93,8 +93,9 @@ El Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y
 
 - Dimensión del dataframe. Tiene 216 filas y 17 columnas.
 
-` df.shape
-   (216, 17)`
+``` df.shape
+   (216, 17)
+```` 
 
 - Resumen de información del dataframe.
 
@@ -123,7 +124,7 @@ Data columns (total 17 columns):
  15  ids              216 non-null    int64  
  16  Locationlist     216 non-null    object 
 dtypes: float64(3), int64(3), object(11
-```
+````
 
 
 *Datos de  BiciMad de Enero 2018*
@@ -132,7 +133,7 @@ dtypes: float64(3), int64(3), object(11
 
 ```python df.shape
    (263701, 11)`
-```
+````
 - Resumen de información del dataframe.
 
 ```python
@@ -154,7 +155,7 @@ Data columns (total 11 columns):
  9   ageRange          263701 non-null  int64 
  10  zip_code          263701 non-null  object
 dtypes: int64(7), object(4)
-```
+````
 
 *Unificación de datos de estacionamiento y datos de enero 2018*
 
@@ -201,9 +202,11 @@ Cabe destacar correalación de 0.46 entre el tipo de usuario y el total de viaje
 
 
 # Modeling
-
-                                     
-                                           **LogisticRegression**                               **K Nearest Neighbor Classifier**           
+adfsgds
+asf
+asfa
+ sdgsg  
+                                    |     LogisticRegression                     | K Nearest Neighbor Classifier
 
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  | precision  |  recall | f1-score | support     |
 |-------|-------------  |------------|------------|---------|----------|----------|------------|---------|----------|-------------|

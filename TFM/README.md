@@ -6,7 +6,7 @@
 
 [Methodology and Tools](#Methodology-and-Tools)
 
-[Data Acquisition](#Data Acquisition)
+[Data Acquisition](#Data-Acquisition)
 
 
 # Introduction

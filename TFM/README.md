@@ -10,6 +10,13 @@ Después de realizar un brainstorming sobre las diferentes líneas de estudios a
 - Algoritmo que detecte el tipo de usuario.
 
 # Methodology and Tools
+El proyecto se ha realizado utilizando Google Colaboratory, es un entorno gratuito de Jupyter Notebook que no requiere configuración y se ejecuta en la nube. Para el desarrollo del código el lenguaje de programación que he usado ha sido Python para la limpieza, tratamiento, ejecución de datos así como las diferentes técnicas de Machine Learning. A continuación, indico las herramientas utilizadas:
+
+- Entorno de desarrollo: Jupyter Notebook utilizandolo en Google Colaboratory
+- Lenguaje de programación: Python 3.6
+- Librerías para limpieza y tratamiento de datos: numpy, pandas.
+- Librerías para visualización: matplotlib, seaborn, folium, bokeh, streamlit, altair
+- Librería para modelos: sklearn
 
 
 

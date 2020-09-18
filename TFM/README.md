@@ -43,13 +43,12 @@ El Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y
 
 - user_type: Número que indica el tipo de usuario que ha realizado el movimiento. Sus posibles valores son los siguientes:
 
-  -> 0: No se ha podido determinar el tipo de usuario
-  1: Usuario anual (poseedor de un pase anual)
-  2: Usuario ocasional
-  3: Trabajador de la empresa 
+  * 0: No se ha podido determinar el tipo de usuario
+  * 1: Usuario anual (poseedor de un pase anual)
+  * 2: Usuario ocasional
+  * 3: Trabajador de la empresa 
 
-- ageRange: Número que indica el rango de edad del usuario que ha realizado el
-movimiento. Sus posibles valores son:
+- ageRange: Número que indica el rango de edad del usuario que ha realizado el movimiento. Sus posibles valores son:
 0: No se ha podido determinar el rango de edad del usuario
 1: El usuario tiene entre 0 y 16 años
 2: El usuario tiene entre 17 y 18 años

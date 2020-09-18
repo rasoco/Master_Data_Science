@@ -1,7 +1,5 @@
 # BiciMad Project
 
-[Introduction](TFM/README.md)
-
 
 ## Introduction
 Este proyecto tiene por finalidad analizar el sistema de bicicletas públicas en la ciudad de Madrid, específicamente de Enero de 2018  y sus puntos de estacionamientos. 
@@ -15,8 +13,6 @@ de Enero 2018.
 - Algoritmo que detecte el tipo de usuario.
 
 
-http://github.com - automatic!
-[GitHub](http://github.com)
 
 
 

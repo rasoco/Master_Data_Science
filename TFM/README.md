@@ -202,9 +202,9 @@ Cabe destacar correalación de 0.46 entre el tipo de usuario y el total de viaje
 
 # Modeling
 
-|                                    |--------------------------------------------|-----------------------------------------------|                      
-|         Information                |  LogisticRegression                         |      K Nearest Neighbor Classifier            |
-|---------------------------------------------------------------------------------|-----------------------------------------------|
+                                     
+                                           **LogisticRegression**                               **K Nearest Neighbor Classifier**           
+
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  | precision  |  recall | f1-score | support     |
 |-------|-------------  |------------|------------|---------|----------|----------|------------|---------|----------|-------------|
 |       | travel_minutes|   1        |    0.98    |   1.00  |   0.99   |  160080  |   0.99     |   1.00  |   0.99   |   160080    |

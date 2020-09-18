@@ -8,6 +8,13 @@
 
 [Data Acquisition](#Data-Acquisition)
 
+[Data Exploration](#Data-Exploration)
+
+[Models](#Models)
+
+[Visualization](#Visualization)
+
+
 
 # Introduction
 Mi interés por desarrollar un proyecto sobre la movilidad sostenible de Madrid surge porque soy aficionada a montar en bici y además por el volumen de datos que se puede manejar y analizar sobre los movimientos de los usuarios. En la búsqueda de datos encontre la base de datos abierta de [EMT Madrid](https://opendata.emtmadrid.es/Datos-estaticos/Datos-generales-(1)) en la cual tienes acceso al sistema de bicicletas públicas de Madrid conocido como BiciMad. Para obtener los datos de los puntos de estacionamientos me puse en contacto con el [Portal de datos abiertos del Ayuntamiento de Madrid](https://datos.madrid.es/sites/v/index.jsp?vgnextoid=e9b2a4059b4b7410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD) ya que los datos no estaban actualizados, fueron muy amables y a los pocos días los actualizaron. 
@@ -28,6 +35,24 @@ El proyecto se ha realizado utilizando Google Colaboratory, es un entorno gratui
 - Librería para modelos: sklearn.
 
 # Data Acquisition
+
+## *Datos de puntos de estacionamientos*
+
+Los datos de estacionamientos en el cual se obtiene la información de los puntos donde se pueden retirar bicicletas eléctricas. Este conjunto de datos recoge las siguientes variables: 
+
+- Número de estación
+- Gis_X
+- Gis_Y
+- Fecha de Alta
+- Distrito
+- Barrio
+- Calle
+- Nº de Finca
+- Tipo de reserva
+- Número de plazas
+- Longitud
+- Latitud
+- Dirección
 
 ## *Datos BiciMad de Enero 2018*
 El Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y obtenidos en el portal de datos abiertos de la [EMT Madrid](https://opendata.emtmadrid.es/Datos-estaticos/Datos-generales-(1)). Este conjunto de datos recoge las siguientes variables:
@@ -60,23 +85,41 @@ El Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y
 
 - Código postal. El código postal del usuario que ha realizado el movimiento. 
 
-## *Datos de puntos de estacionamientos*
 
-Los datos de estacionamientos en el cual se obtiene la información de los puntos donde se pueden retirar bicicletas eléctricas. Este conjunto de datos recoge las siguientes variables: 
 
-- Número de estación
-- Gis_X
-- Gis_Y
-- Fecha de Alta
-- Distrito
-- Barrio
-- Calle
-- Nº de Finca
-- Tipo de reserva
-- Número de plazas
-- Longitud
-- Latitud
-- Dirección
+# Data Exploration 
+
+*Datos de puntos de estacionamientos*
+
+- Dimensión del dataframe.
+
+` df.shape
+   (216, 17)`
+
+- Visualizamos las primeras cinco líneas del dataframe.
+
+```python
+df.head(5)
+
+id	Gis_X	Gis_Y	Fecha de Alta	Distrito	Barrio	Calle	Nº Finca	Tipo de Reserva	Anclajes	Unnamed: 10	LONGITUD	LATITUD	DIRECCION	Year	ids	Locationlist
+0	001 a	440443,61	4474290,65	04/12/2019	01  CENTRO	01-06 SOL	ALCALA, CALLE, DE	2	BiciMAD	30	NaN	-3.701998	40.417111	CALLE DE ALCALA, 2	2019	1	[40.417110795315295, -3.70199802576925]
+1	001 b	440480,56	4474301,74	06/02/2020	01  CENTRO	01-06 SOL	ALCALA, CALLE, DE	6	BiciMAD	30	NaN	-3.701564	40.417213	CALLE DE ALCALA, 6	2020	1	[40.4172133427666, -3.7015635605662203]
+2	2	440134,83	4474678,23	23/06/2014	01  CENTRO	01-05 UNIVERSIDAD	MIGUEL MOYA, CALLE, DE	1	BiciMAD	24	NaN	-3.705674	40.420580	CALLE DE MIGUEL MOYA, 1	2014	2	[40.4205801410996, -3.7056738708445]
+3	3	440012,98	4475760,68	23/06/2014	07  CHAMBERÍ	07-02 ARAPILES	CONDE DEL VALLE DE SUCHIL, PLAZA, DEL	2	BiciMAD	18	NaN	-3.707212	40.430323	PLAZA DEL CONDE DEL VALLE DE SUCHIL, 2	2014	3	[40.430322563576105, -3.7072122271712296]
+4	4	440396,4	4475565,36	23/06/2014	01  CENTRO	01-05 UNIVERSIDAD	MANUELA MALASAÑA, CALLE, DE	3	BiciMAD	24	NaN	-3.702674	40.428591	CALLE DE MANUELA MALASAÑA, 3	2014	4	[40.4285905943729, -3.70267393708668] `` 
+
+
+
+
+
+
+
+
+# Modeling
+
+
+# Visualization
+
 
 
 

@@ -156,6 +156,36 @@ Data columns (total 11 columns):
 dtypes: int64(7), object(4)
 ```
 
+*Unificación de datos de estacionamiento y datos de enero 2018*
+Se realizo un cruce de datos entre los puntos de estacionamientos y los datos del mes de enero de 2018 con el objetivo de explorarlos en conjunto.
+```python
+data.info()
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 2926629 entries, 0 to 2926628
+Data columns (total 20 columns):
+ #   Column             Dtype  
+---  ------             -----  
+ 0   _id                object 
+ 1   user_day_code      object 
+ 2   idunplug_station   int64  
+ 3   Distrito_idunplug  object 
+ 4   Barrio_idunplug    object 
+ 5   Longitud_idunplug  float64
+ 6   Latitud_idunplug   float64
+ 7   idplug_station     int64  
+ 8   Distrito_idplug    object 
+ 9   Barrio_idplug      object 
+ 10  Longitud_idplug    float64
+ 11  Latitud_idplug     float64
+ 12  user_type          int64  
+ 13  travel_time        int64  
+ 14  unplug_hourTime    object 
+ 15  ageRange           int64  
+ 16  zip_code           object 
+ 17  travel_minutes     float64
+ 18  distance           float64
+ 19  count_travel       int64  
+dtypes: float64(6), int64(6), object(8)
 
 
 

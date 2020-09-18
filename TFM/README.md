@@ -72,7 +72,10 @@ Los datos de estacionamientos en el cual se obtiene la información de los punto
 
 
 ```python
-data.head()```
+data.head()
+```
+
+rarasoa3
 
 
 

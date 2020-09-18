@@ -21,9 +21,7 @@ El proyecto se ha realizado utilizando Google Colaboratory, es un entorno gratui
 # Data Acquisition
 
 ## *Datos BiciMad de Enero 2018*
-Para la adquisición de datos se han utilizado las siguientes fuentes de datos.
-
-Por un lado, el Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y obtenidos en el portal de datos abiertos de la EMT(link). Este conjunto de datos recoge lo siguiente:
+El Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y obtenidos en el portal de datos abiertos de la [EMT Madrid](https://opendata.emtmadrid.es/Datos-estaticos/Datos-generales-(1)). Este conjunto de datos recoge las siguientes variables:
 
 - Identificador del trayecto
 - Código del usuario. Para una misma fecha, todos los movimientos de

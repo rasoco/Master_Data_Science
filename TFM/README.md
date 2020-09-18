@@ -191,9 +191,10 @@ dtypes: float64(6), int64(6), object(8)
 ```
 - Correlaciones entre las variables
 
+1. Correlaciones
 ![Datos de correlaciones](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/2_image.png>)
 
-
+2. Mapa de calor sobre de las correlaciones
 ![Mapa de correlaciones](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/3_image.png>)
 
 Cabe destacar correalación de 0.46 entre el tipo de usuario y el total de viaje.

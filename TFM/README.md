@@ -157,6 +157,7 @@ dtypes: int64(7), object(4)
 ```
 
 *Unificación de datos de estacionamiento y datos de enero 2018*
+
 Se realizo un cruce de datos entre los puntos de estacionamientos y los datos del mes de enero de 2018 con el objetivo de explorarlos en conjunto así como se crearon nuevas variables como travel_minutes y count_travel.
 
 ```python

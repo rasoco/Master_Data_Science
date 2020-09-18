@@ -186,7 +186,8 @@ Data columns (total 20 columns):
  17  travel_minutes     float64
  18  distance           float64
  19  count_travel       int64  
-dtypes: float64(6), int64(6), object(8) ``
+dtypes: float64(6), int64(6), object(8)
+```
 
 
 # Testing 

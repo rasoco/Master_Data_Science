@@ -202,7 +202,7 @@ Cabe destacar correalación de 0.46 entre el tipo de usuario y el total de viaje
 
 # Modeling
 
-                      
+|------------------------------------|--------------------------------------------|-----------------------------------------------|                      
 |         Information                | LogisticRegression                         |      K Nearest Neighbor Classifier            |
 |---------------------------------------------------------------------------------|-----------------------------------------------|
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  | precision  |  recall | f1-score | support     |

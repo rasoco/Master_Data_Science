@@ -188,6 +188,7 @@ Data columns (total 20 columns):
 dtypes: float64(6), int64(6), object(8)
 
 
+(https://raw.github.com/rasoco/master_data_science/blob/master/TFM/img/1_image.png)
 
 
 

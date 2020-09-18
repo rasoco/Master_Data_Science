@@ -128,7 +128,7 @@ dtypes: float64(3), int64(3), object(11
 
 *Datos de  BiciMad de Enero 2018*
 
-- Dimensión del dataframe. Tiene 263701 registro y 11 columnas.
+- Dimensión del dataframe. Tiene 263701 registros y 11 columnas.
 
 ` df.shape
    (263701, 11)`
@@ -161,9 +161,14 @@ dtypes: int64(7), object(4)
 
 
 
-
-
 # Modeling
+
+
+
+
+
+
+
 
 
 # Visualization

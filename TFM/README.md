@@ -206,7 +206,7 @@ adfsgds
 asf
 asfa
  sdgsg  
-                                    |     LogisticRegression                     | K Nearest Neighbor Classifier
+                                              LogisticRegression                    K Nearest Neighbor Classifier
 
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  | precision  |  recall | f1-score | support     |
 |-------|-------------  |------------|------------|---------|----------|----------|------------|---------|----------|-------------|

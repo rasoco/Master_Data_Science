@@ -203,22 +203,26 @@ Cabe destacar correalación de 0.46 entre el tipo de usuario y el total de viaje
 
 # Modeling
 
-                                                          
+## LogisticRegression
+
+**Utilizando el total de los datos**
               
-|Models LogisticRegression  | Features      | Type User  | precision  |  recall | f1-score | support  |  
+|Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
 |       | travel_minutes|   1        |    0.98    |   1.00  |   0.99   |  160080  |   
 |1      |  distance     |   2        |    0.00    |   0.00  |   0.00   |   1874   |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
 
 
-|Models LogisticRegression  | Features      | Type User  | precision  |  recall | f1-score | support  |  
+|Models  | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
-|       | travel_minutes|   1        |    0.98    |   1.00  |   0.99   |  160080  |   
-|2     |  distance     |   2        |    0.00    |   0.00  |   0.00   |   1874   |      
+|       | travel_minutes distance|   1        |    0.98    |   1.00  |   0.99   |  160080  |   
+|2     |  ageRange     |   2        |    0.00    |   0.00  |   0.00   |   1874   |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
 
-|Models LogisticRegression  | Features      | Type User  | precision  |  recall | f1-score | support  |  
+**Balanceo de datos**
+
+|Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
 |       | travel_minutes|   1        |    0.98    |   1.00  |   0.99   |  160080  |   
 | 3    |  distance     |   2        |    0.00    |   0.00  |   0.00   |   1874   |      

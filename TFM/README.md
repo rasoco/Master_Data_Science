@@ -24,23 +24,29 @@ El proyecto se ha realizado utilizando Google Colaboratory, es un entorno gratui
 El Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y obtenidos en el portal de datos abiertos de la [EMT Madrid](https://opendata.emtmadrid.es/Datos-estaticos/Datos-generales-(1)). Este conjunto de datos recoge las siguientes variables:
 
 - Identificador del trayecto
-- Código del usuario. Para una misma fecha, todos los movimientos de
-un mismo usuario.
+
+- Código del usuario. Para una misma fecha, todos los movimientos de un mismo usuario.
+
 - Número de la estación de la que se desengancha la bicicleta.
+
 - Número de la base de la que se desengancha la bicicleta.
+
 - Número de la estación en la que se engancha la bicicleta.
-- Número de la base en la que se engancha la bicicleta. 
--  Franja horaria en la que se realiza el desenganche de la bicicleta. 
-- Tiempo total en segundos, entre el desenganche y el enganche de la
-bicicleta. 
-- Detalle del trayecto realizado por la bicicleta entre la estación de partida y la de
-destino, en formato GeoJSON. 
-- user_type: Número que indica el tipo de usuario que ha realizado el movimiento. Sus
-posibles valores son:
-0: No se ha podido determinar el tipo de usuario
-1: Usuario anual (poseedor de un pase anual)
-2: Usuario ocasional
-3: Trabajador de la empresa 
+
+- Número de la base en la que se engancha la bicicleta.
+
+-  Franja horaria en la que se realiza el desenganche de la bicicleta.
+
+- Tiempo total en segundos, entre el desenganche y el enganche de la bicicleta. 
+
+- Detalle del trayecto realizado por la bicicleta entre la estación de partida y la de destino, en formato GeoJSON. 
+
+- user_type: Número que indica el tipo de usuario que ha realizado el movimiento. Sus posibles valores son los siguientes:
+
+  0: No se ha podido determinar el tipo de usuario
+  1: Usuario anual (poseedor de un pase anual)
+  2: Usuario ocasional
+  3: Trabajador de la empresa 
 
 - ageRange: Número que indica el rango de edad del usuario que ha realizado el
 movimiento. Sus posibles valores son:

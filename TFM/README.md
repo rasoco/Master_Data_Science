@@ -130,9 +130,9 @@ dtypes: float64(3), int64(3), object(11
 
 - Dimensión del dataframe. Tiene 263701 registros y 11 columnas.
 
-` df.shape
+```python df.shape
    (263701, 11)`
-
+```
 - Resumen de información del dataframe.
 
 ```python
@@ -188,7 +188,7 @@ Data columns (total 20 columns):
  18  distance           float64
  19  count_travel       int64  
 dtypes: float64(6), int64(6), object(8)
-```
+````
 - Correlaciones entre las variables
 
 1. Correlaciones
@@ -199,15 +199,16 @@ dtypes: float64(6), int64(6), object(8)
 
 Cabe destacar correalación de 0.46 entre el tipo de usuario y el total de viaje.
 
+
 # Modeling
 
                       
-                        Logistic Regression                                    | 
--------------------------------------------------------------------------------|-------------------------------------------
+|                        LogisticRegression                                    | K Nearest Neighbor Classifier
+|----------------------------------------------------------------------------| 
 Models | Features     | Type User | precision  |  recall | f1-score | support  | precision  |  recall | f1-score | support
-       | travel_minutes    1           0.98          1.00      0.99     160080 |
-       |  distance        2           0.00          0.00      0.00      1874   |
-       | count_travel     3           1.00          1.00      1.00     716035  |
+       | travel_minutes|   1           0.98          1.00      0.99     160080 |
+       |  distance     |    2           0.00          0.00      0.00      1874   |
+       | count_travel  |    3           1.00          1.00      1.00     716035  |
 -------------------------------------------------------------------------------
 
 

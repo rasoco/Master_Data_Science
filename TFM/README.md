@@ -49,18 +49,23 @@ El Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y
   * 3: Trabajador de la empresa 
 
 - ageRange: Número que indica el rango de edad del usuario que ha realizado el movimiento. Sus posibles valores son:
-0: No se ha podido determinar el rango de edad del usuario
-1: El usuario tiene entre 0 y 16 años
-2: El usuario tiene entre 17 y 18 años
-3: El usuario tiene entre 19 y 26 años
-4: El usuario tiene entre 27 y 40 años
-5: El usuario tiene entre 41 y 65 años
-6: El usuario tiene 66 años o más 
+
+  * 0: No se ha podido determinar el rango de edad del usuario
+  * 1: El usuario tiene entre 0 y 16 años
+  * 2: El usuario tiene entre 17 y 18 años
+  * 3: El usuario tiene entre 19 y 26 años
+  * 4: El usuario tiene entre 27 y 40 años
+  * 5: El usuario tiene entre 41 y 65 años
+  * 6: El usuario tiene 66 años o más 
 
 - Código postal. El código postal del usuario que ha realizado el movimiento. 
 
 ## *Datos de puntos de estacionamientos*
-Por otro lado, los datos de estacionamientos en el cual se obtiene la información de los puntos donde se pueden retirar bicicletas eléctricas,Este conjunto de datos recoge las siguientes variables: 
+
+Los datos de estacionamientos en el cual se obtiene la información de los puntos donde se pueden retirar bicicletas eléctricas. Este conjunto de datos recoge las siguientes variables: 
+
+- Número de estación
+- Gis_X
 
 
 

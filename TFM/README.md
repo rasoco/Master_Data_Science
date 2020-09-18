@@ -188,8 +188,10 @@ Data columns (total 20 columns):
  19  count_travel       int64  
 dtypes: float64(6), int64(6), object(8)
 ```
+Correlaciones entre las variables
 
 ![Datos de correlaciones](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/2_image.png>)
+
 
 ![Mapa de correlaciones](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/1_image.png>)
 

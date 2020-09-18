@@ -43,7 +43,7 @@ El Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y
 
 - user_type: Número que indica el tipo de usuario que ha realizado el movimiento. Sus posibles valores son los siguientes:
 
-  0: No se ha podido determinar el tipo de usuario
+  -> 0: No se ha podido determinar el tipo de usuario
   1: Usuario anual (poseedor de un pase anual)
   2: Usuario ocasional
   3: Trabajador de la empresa 

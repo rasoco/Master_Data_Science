@@ -133,11 +133,27 @@ dtypes: float64(3), int64(3), object(11
 ` df.shape
    (263701, 11)`
 
-- Visualizamos las primeras cinco líneas del dataframe.
+- Resumen de información del dataframe.
 
 ```python
-
-
+jan18.info()
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 263701 entries, 0 to 263701
+Data columns (total 11 columns):
+ #   Column            Non-Null Count   Dtype 
+---  ------            --------------   ----- 
+ 0   id                263701 non-null  object
+ 1   user_day_code     263701 non-null  object
+ 2   idunplug_station  263701 non-null  int64 
+ 3   idunplug_base     263701 non-null  int64 
+ 4   idplug_station    263701 non-null  int64 
+ 5   idplug_base       263701 non-null  int64 
+ 6   user_type         263701 non-null  int64 
+ 7   travel_time       263701 non-null  int64 
+ 8   unplug_hourTime   263701 non-null  object
+ 9   ageRange          263701 non-null  int64 
+ 10  zip_code          263701 non-null  object
+dtypes: int64(7), object(4)
 ```
 
 

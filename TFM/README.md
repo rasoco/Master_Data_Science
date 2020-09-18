@@ -195,7 +195,7 @@ dtypes: float64(6), int64(6), object(8)
 1. Correlaciones
 ![Datos de correlaciones](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/2_image.png>)
 
-2. Mapa de calor sobre de las correlaciones
+2. Mapa de calor de las correlaciones
 ![Mapa de correlaciones](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/3_image.png>)
 
 Cabe destacar correalación de 0.46 entre el tipo de usuario y el total de viaje.
@@ -287,7 +287,7 @@ Tiene una buena precisión global de 0.88.
 |4     |   ageRange    |   2        |   0.82 |   0.91  |   0.86  |  1927  |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  1928   |  
 
-Matriz de confusión del Modelo 4 con Balanceo de K Nearest Neighbor Classifer
+**Matriz de confusión del Modelo 4 con Balanceo de K Nearest Neighbor Classifer**
 
 ![Matriz de confunsión sin normalizar](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/6_image.png>)
 

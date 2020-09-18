@@ -204,11 +204,18 @@ Cabe destacar correalación de 0.46 entre el tipo de usuario y el total de viaje
 ![Pairplot](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/4_image.png>)
 
 # Modeling
-Se han realizado modelos de Regresión Logistica y K Nearest Neighbors Classifer conocido también como K Vecinos. Por un lado, *la Regresión Logística* se trata de un tipo de análisis de regresión utilizado para predecir el resultado de una variabe categórica. Por otro lado, *K Vecinos* es un algoritmo que almacena todos los casos disponibles y clasifica los casos nuevos basándose en una medida de similitud. Así mismo, se han realizado predicciones utilizado el total de los datos y por otro lado, se ha realizado un balanceo de los datos en función del tipo de usuario con el objetivo de equiparar las muestras.
+Se han realizado modelos de Regresión Logística y K Nearest Neighbors Classifer conocido también como K Vecinos. Por un lado, *la Regresión Logística* se trata de un tipo de análisis de regresión utilizado para predecir el resultado de una variable categórica. Por otro lado, *K Vecinos* es un algoritmo que almacena todos los casos disponibles y clasifica los casos nuevos basándose en una medida de similitud. 
+
+Además, destacar que se ha utilizado algunos modelos tres variables independendientes y para otros cuatro variables.
+
+Cabe mencionar que se han realizado predicciones utilizando el total de los datos del dataset(2926629) y por otro lado, se ha realizado un balanceo de los datos (18972) en función del tipo de usuario con el objetivo de equiparar las muestras.
+
+En total se han hecho 8 modelos. 
 
 ## Logistic Regression
 
 **Utilizando el total de los datos**
+
               
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -216,27 +223,35 @@ Se han realizado modelos de Regresión Logistica y K Nearest Neighbors Classifer
 |1      |  distance     |   2        |    0.00    |   0.00  |   0.00   |   1874   |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
 
+Tiene una buena precisión global de 0.99. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
+
 
 |Models  | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
-|       | travel_minutes distance|   1        |    0.98    |   1.00  |   0.99   |  160080  |   
-|2     |  ageRange     |   2        |    0.00    |   0.00  |   0.00   |   1874   |      
-|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
+|       | travel_minutes distance|   1        |    0.98    |   1.00  |   0.99   |  374466 |   
+|2     |  ageRange     |   2        |    0.00    |   0.00  |   0.00   |    4450  |      
+|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  1669724  |  
+
+Tiene una buena precisión global de 1.00. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
 **Balanceo de datos**
 
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
-|       | travel_minutes|   1        |    0.98    |   1.00  |   0.99   |  160080  |   
-| 3    |  distance     |   2        |    0.00    |   0.00  |   0.00   |   1874   |      
-|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
+|       | travel_minutes|   1        |    0.65    |  0.87   |     0.74     |  4487  |   
+| 3    |  distance     |   2        |    0.80     |    0.52  |  0.63   |   4397   |      
+|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |   4396  |  
+
+No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
+
 
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
-|       | travel_minutes distance|   1        |    0.98    |   1.00  |   0.99   |  160080  |   
-|4     |  ageRange    |   2        |    0.00    |   0.00  |   0.00   |   1874   |      
-|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
+|       | travel_minutes distance|   1        |       0.95     |   0.70  |   0.70    | 4487  |   
+|4     |  ageRange    |   2        |    0.76   |   0.97  |   0.85     |   4397  |      
+|       | count_travel  |   3        |    1.00    |    0.99 |   1.00   | 4396  |  
 
+Tiene una buena precisión global de 0.88.
 
 
 

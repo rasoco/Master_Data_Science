@@ -208,9 +208,9 @@ Se han realizado modelos de Regresión Logística y K Nearest Neighbors Classife
 
 Además, destacar que se ha utilizado algunos modelos tres variables independendientes y para otros cuatro variables.
 
-Cabe mencionar que se han realizado predicciones utilizando el total de los datos del dataset(2926629) y por otro lado, se ha realizado un balanceo de los datos (18972) en función del tipo de usuario con el objetivo de equiparar las muestras.
+Cabe mencionar que se han realizado predicciones utilizando el total de los datos del dataset(2926629) y por otro lado, se ha realizado un balanceo de los datos(18972) en función del tipo de usuario con el objetivo de equiparar las muestras.
 
-En total se han hecho 8 modelos. 
+En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos decidido implementar el modelo 4 de K Nearest Neighbor Classifer con balanceo de datos. 
 
 ## Logistic Regression
 
@@ -286,6 +286,15 @@ Tiene una buena precisión global de 0.88.
 |       | travel_minutes distance|   1        |    0.89    |   0.79   |  0.84    |  1837 |   
 |4     |   ageRange    |   2        |   0.82 |   0.91  |   0.86  |  1927  |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  1928   |  
+
+Matriz de confusión del Modelo 4 con Balanceo de K Nearest Neighbor Classifer
+
+![Matriz de confunsión sin normalizar](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/6_image.png>)
+
+
+
+![Matriz de confunsión sin normalizar](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/5_image.png>)
+
 
 
 # Visualization

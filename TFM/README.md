@@ -24,23 +24,14 @@ El proyecto se ha realizado utilizando Google Colaboratory, es un entorno gratui
 El Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y obtenidos en el portal de datos abiertos de la [EMT Madrid](https://opendata.emtmadrid.es/Datos-estaticos/Datos-generales-(1)). Este conjunto de datos recoge las siguientes variables:
 
 - Identificador del trayecto
-
 - Código del usuario. Para una misma fecha, todos los movimientos de un mismo usuario.
-
 - Número de la estación de la que se desengancha la bicicleta.
-
 - Número de la base de la que se desengancha la bicicleta.
-
 - Número de la estación en la que se engancha la bicicleta.
-
 - Número de la base en la que se engancha la bicicleta.
-
 -  Franja horaria en la que se realiza el desenganche de la bicicleta.
-
 - Tiempo total en segundos, entre el desenganche y el enganche de la bicicleta. 
-
 - Detalle del trayecto realizado por la bicicleta entre la estación de partida y la de destino, en formato GeoJSON. 
-
 - user_type: Número que indica el tipo de usuario que ha realizado el movimiento. Sus posibles valores son los siguientes:
 
   * 0: No se ha podido determinar el tipo de usuario
@@ -66,6 +57,17 @@ Los datos de estacionamientos en el cual se obtiene la información de los punto
 
 - Número de estación
 - Gis_X
+- Gis_Y
+- Fecha de Alta
+- Distrito
+- Barrio
+- Calle
+- Nº de Finca
+- Tipo de reserva
+- Número de plazas
+- Longitud
+- Latitud
+- Dirección
 
 
 

@@ -200,10 +200,13 @@ dtypes: float64(6), int64(6), object(8)
 
 Cabe destacar correalación de 0.46 entre el tipo de usuario y el total de viaje.
 
+3. Pairplot 
+![Pairplot](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/4_image.png>)
 
 # Modeling
+Se han realizado modelos de Regresión Logistica y K Nearest Neighbors Classifer conocido también como K Vecinos. Por un lado, *la Regresión Logística* se trata de un tipo de análisis de regresión utilizado para predecir el resultado de una variabe categórica. Por otro lado, *K Vecinos* es un algoritmo que almacena todos los casos disponibles y clasifica los casos nuevos basándose en una medida de similitud. Así mismo, se han realizado predicciones utilizado el total de los datos y por otro lado, se ha realizado un balanceo de los datos en función del tipo de usuario con el objetivo de equiparar las muestras.
 
-## LogisticRegression
+## Logistic Regression
 
 **Utilizando el total de los datos**
               

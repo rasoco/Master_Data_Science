@@ -96,15 +96,33 @@ El Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y
 ` df.shape
    (216, 17)`
 
-- Visualizamos las primeras cinco líneas del dataframe.
+- Resumen de información del dataframe.
 
 ```python
-df.head(3)
-
-   id	 Gis_X	        Gis_Y	  Fecha de Alta	 Distrito	   Barrio	 Calle	 Nº  Finca	 Tipo de Reserva	 Anclajes	 Unnamed: 10	 LONGITUD	 LATITUD	 DIRECCION	 Year	 
-0	001 a	440443,61	4474290,65	 04/12/2019	   01  CENTRO	01-06 SOL	ALCALA, CALLE, DE	2	BiciMAD	30	NaN	-3.701998	40.417111	CALLE DE ALCALA, 2	  2019	
-1	001 b	440480,56	4474301,74	 06/02/2020	   01  CENTRO	01-06 SOL	ALCALA, CALLE, DE	6	BiciMAD	30	NaN	-3.701564	40.417213	CALLE DE ALCALA, 6	2020	
-2	2	     440134,83	4474678,23	 23/06/2014	  01  CENTRO	01-05 UNIVERSIDAD	MIGUEL MOYA, CALLE, DE	1	BiciMAD	24	NaN	-3.705674	40.420580	CALLE DE MIGUEL MOYA, 1	2014
+df.info()
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 216 entries, 0 to 215
+Data columns (total 17 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   id               216 non-null    object 
+ 1   Gis_X            216 non-null    object 
+ 2   Gis_Y            216 non-null    object 
+ 3   Fecha de Alta    216 non-null    object 
+ 4   Distrito         216 non-null    object 
+ 5   Barrio           216 non-null    object 
+ 6   Calle            216 non-null    object 
+ 7   Nº Finca         216 non-null    object 
+ 8   Tipo de Reserva  216 non-null    object 
+ 9   Anclajes         216 non-null    int64  
+ 10  Unnamed: 10      0 non-null      float64
+ 11  LONGITUD         216 non-null    float64
+ 12  LATITUD          216 non-null    float64
+ 13  DIRECCION        216 non-null    object 
+ 14  Year             216 non-null    int64  
+ 15  ids              216 non-null    int64  
+ 16  Locationlist     216 non-null    object 
+dtypes: float64(3), int64(3), object(11
 ```
 
 
@@ -118,12 +136,7 @@ df.head(3)
 - Visualizamos las primeras cinco líneas del dataframe.
 
 ```python
-df.head(3)
 
-id	user_day_code	  idunplug_station	 idunplug_base 	idplug_station	 idplug_base	 user_type	 travel_time	 unplug_hourTime	 ageRange	 zip_code
-0	5a505acd2f384319304ed614b00665a845be18ed9f036c2d72def1ef2fa2c49365cb64...	6	14	7	1	1	284	{'$date': '2018-01-01T00:00:00.000+0100'}	5	28010
-1	5a505acd2f384319304ed61565a82ac6353d9e8b25c17a49bb46d09426757b40946370...	24	21	117	4	1	666	{'$date': '2018-01-01T00:00:00.000+0100'}	0	
-2	5a505acd2f384319304ed61651b7da733980586e1f847b61cc4af9c0268fc2d09df63e...	24	19	117	19	1	662	{'$date': '2018-01-01T00:00:00.000+0100'}	0	
 
 ```
 

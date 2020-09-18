@@ -158,6 +158,7 @@ dtypes: int64(7), object(4)
 
 *Unificación de datos de estacionamiento y datos de enero 2018*
 Se realizo un cruce de datos entre los puntos de estacionamientos y los datos del mes de enero de 2018 con el objetivo de explorarlos en conjunto.
+
 ```python
 data.info()
 <class 'pandas.core.frame.DataFrame'>
@@ -185,10 +186,12 @@ Data columns (total 20 columns):
  17  travel_minutes     float64
  18  distance           float64
  19  count_travel       int64  
-dtypes: float64(6), int64(6), object(8)
+dtypes: float64(6), int64(6), object(8) ``
 
 
-(https://raw.github.com/rasoco/master_data_science/blob/master/TFM/img/1_image.png)
+# Testing 
+
+(https://raw.github.com/rasoco/master_data_science/master/TFM/img/1_image.png)
 
 
 

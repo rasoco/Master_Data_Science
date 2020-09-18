@@ -123,7 +123,7 @@ Data columns (total 17 columns):
  14  Year             216 non-null    int64  
  15  ids              216 non-null    int64  
  16  Locationlist     216 non-null    object 
-dtypes: float64(3), int64(3), object(11
+dtypes: float64(3), int64(3), object(11)
 ````
 
 
@@ -214,7 +214,7 @@ En total se han hecho 8 modelos.
 
 ## Logistic Regression
 
-**Utilizando el total de los datos**
+- **Utilizando el total de los datos**
 
               
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
@@ -234,7 +234,7 @@ Tiene una buena precisión global de 0.99. No obstante, no tiene buena Precisió
 
 Tiene una buena precisión global de 1.00. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
-**Balanceo de datos**
+- **Balanceo de datos**
 
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -258,34 +258,34 @@ Tiene una buena precisión global de 0.88.
 ## K Nearest Neighbor Classifer
 
 
-**Utilizando el total de los datos**
+- **Utilizando el total de los datos**
               
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
-|       | travel_minutes|   1        |    0.98    |   1.00  |   0.99   |  160080  |   
-|1      |  distance     |   2        |    0.00    |   0.00  |   0.00   |   1874   |      
+|       | travel_minutes|   1        |    0.99     |   1.00  |  0.99   |  160080  |   
+|1      |  distance     |   2        |    0.35    |    0.15   |  0.21   |   1874   |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
 
 
 |Models  | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
-|       | travel_minutes distance|   1        |    0.98    |   1.00  |   0.99   |  160080  |   
-|2     |  ageRange     |   2        |    0.00    |   0.00  |   0.00   |   1874   |      
+|       | travel_minutes distance|   1        |     0.99    |   1.00  |   0.99   |  160080  |   
+|2     |  ageRange     |   2        |   0.40    |   0.23  |   0.29    |   1874   |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
 
-**Balanceo de datos**
+- **Balanceo de datos**
 
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
-|       | travel_minutes|   1        |    0.98    |   1.00  |   0.99   |  160080  |   
-| 3    |  distance     |   2        |    0.00    |   0.00  |   0.00   |   1874   |      
-|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
+|       | travel_minutes|   1        |     0.78     |  0.72 |   0.75  |  1837  |   
+| 3    |  distance     |   2        |      0.75    |   0.78 |     0.78   |   1927   |      
+|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  1928  |  
 
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
-|       | travel_minutes distance|   1        |    0.98    |   1.00  |   0.99   |  160080  |   
-|4     |   ageRange    |   2        |    0.00    |   0.00  |   0.00   |   1874   |      
-|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
+|       | travel_minutes distance|   1        |    0.89    |    0.80   |  0.84    |  1837 |   
+|4     |   ageRange    |   2        |    0.83  |   0.90  |   0.86  |  1927  |      
+|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  1928   |  
 
 
 # Visualization

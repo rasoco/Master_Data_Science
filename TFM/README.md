@@ -192,7 +192,7 @@ dtypes: float64(6), int64(6), object(8)
 
 # Testing 
 
-(https://raw.github.com/rasoco/master_data_science/master/TFM/img/1_image.png)
+(<https://raw.github.com/rasoco/master_data_science/master/TFM/img/1_image.png>)
 
 
 

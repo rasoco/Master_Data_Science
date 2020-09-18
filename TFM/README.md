@@ -15,8 +15,51 @@ El proyecto se ha realizado utilizando Google Colaboratory, es un entorno gratui
 - Entorno de desarrollo: Jupyter Notebook utilizandolo en Google Colaboratory
 - Lenguaje de programación: Python 3.6
 - Librerías para limpieza y tratamiento de datos: numpy, pandas.
-- Librerías para visualización: matplotlib, seaborn, folium, bokeh, streamlit, altair
-- Librería para modelos: sklearn
+- Librerías para visualización: matplotlib, seaborn, folium, bokeh, streamlit, altair.
+- Librería para modelos: sklearn.
+
+# Data Acquisition
+
+## *Datos BiciMad de Enero 2018*
+Para la adquisición de datos se han utilizado las siguientes fuentes de datos.
+
+Por un lado, el Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y obtenidos en el portal de datos abiertos de la EMT(link). Este conjunto de datos recoge lo siguiente:
+
+- Identificador del trayecto
+- Código del usuario. Para una misma fecha, todos los movimientos de
+un mismo usuario.
+- Número de la estación de la que se desengancha la bicicleta.
+- Número de la base de la que se desengancha la bicicleta.
+- Número de la estación en la que se engancha la bicicleta.
+- Número de la base en la que se engancha la bicicleta. 
+-  Franja horaria en la que se realiza el desenganche de la bicicleta. 
+- Tiempo total en segundos, entre el desenganche y el enganche de la
+bicicleta. 
+- Detalle del trayecto realizado por la bicicleta entre la estación de partida y la de
+destino, en formato GeoJSON. 
+- user_type: Número que indica el tipo de usuario que ha realizado el movimiento. Sus
+posibles valores son:
+0: No se ha podido determinar el tipo de usuario
+1: Usuario anual (poseedor de un pase anual)
+2: Usuario ocasional
+3: Trabajador de la empresa 
+
+- ageRange: Número que indica el rango de edad del usuario que ha realizado el
+movimiento. Sus posibles valores son:
+0: No se ha podido determinar el rango de edad del usuario
+1: El usuario tiene entre 0 y 16 años
+2: El usuario tiene entre 17 y 18 años
+3: El usuario tiene entre 19 y 26 años
+4: El usuario tiene entre 27 y 40 años
+5: El usuario tiene entre 41 y 65 años
+6: El usuario tiene 66 años o más 
+
+- Código postal. El código postal del usuario que ha realizado el movimiento. 
+
+## *Datos de puntos de estacionamientos*
+Por otro lado, los datos de estacionamientos en el cual se obtiene la información de los puntos donde se pueden retirar bicicletas eléctricas,Este conjunto de datos recoge las siguientes variables: 
+
+
 
 
 

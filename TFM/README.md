@@ -216,6 +216,7 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 
 - **Utilizando el total de los datos**
 
+## Modelo 1: Tiene una buena precisión global de 0.99. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
               
 |Models/Metrics | Features | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -226,7 +227,7 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 |   macro avg     | |            |0.66  |0.66   |  0.66   | 877989|
 |     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 |
 
-Tiene una buena precisión global de 0.99. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
+
 
 
 |Models  | Features | Type User  | precision  |  recall | f1-score | support  |  

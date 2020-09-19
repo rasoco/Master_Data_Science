@@ -10,7 +10,7 @@
 
 [Data Exploration](#Data-Exploration)
 
-[Models](#Models)
+[Models](#Modeling)
 
 [Visualization](#Visualization)
 
@@ -257,7 +257,7 @@ No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
-|       | travel_minutes distance|   1        |       0.95     |   0.70  |   0.782   | 4487  |   
+|       | travel_minutes distance|   1      |    0.95     |   0.72  |   0.82   | 4487  |   
 |4     |  ageRange    |   2        |    0.77   |   0.96  |   0.86     |   4397  |      
 |       | count_travel  |   3        |    1.00    |    0.99 |   1.00   | 4396  |  
 |   accuracy    |       |        |    |      | 0.89|13280 |

@@ -223,7 +223,7 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 |1      |  distance     |   2        |    0.00    |   0.00  |   0.00   |   1874   |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
 |       | accuracy      |        |    |      | 0.99| 877989 |
-|       | macro avg |   |       | 0.66 |0.66   |  0.66   | 877989 |
+|       | macro avg |            |0.66  |0.66   |  0.66   | 877989|
 |       | weighted avg |        |0.99 | 0.99 | 0.99 | 877989 |
 
 Tiene una buena precisión global de 0.99. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.

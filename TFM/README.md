@@ -311,9 +311,14 @@ No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 |   macro avg     | |            |0.90  |0.90  |  0.90  | 5692|
 |     weighted avg  |  |        |0.90 | 0.90 | 0.90 | 5692|
 
+
 **Matriz de confusión del Modelo 4 con Balanceo de K Nearest Neighbor Classifer.**
 
+![Matriz de confunsión sin normalizar](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/6_image.png>)
 
+
+
+![Matriz de confunsión sin normalizar](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/5_image.png>)
 
 
 

@@ -342,8 +342,8 @@ En el **Menu**, selecciona en el desplegable:
 
 ![imagen7](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/7_image.png>)
 
-- Si quieres consultar los puntos de estacionamientos de BiciMad, accede a *BiciMadStations*![imagen8] (<https://github.com/rasoco/master_data_science/blob/master/TFM/img/8_image.png>)
+- Si quieres consultar los puntos de estacionamientos de BiciMad, accede a *BiciMadStations*![imagen8](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/8_image.png>)
 
-- Si quieres saber que tipo de usuario eres de BiciMad, accede a *Do you use BiciMad*![imagen9](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/9_image.png>)
-Cumplimenta los parámetros y automaticamente te indicará que tipo de usuario eres.
+- Si quieres saber que tipo de usuario eres de BiciMad, accede a *Do you use BiciMad*:Cumplimenta los parámetros y automaticamente te indicará que tipo de usuario eres. ![imagen9](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/9_image.png>)
+
 

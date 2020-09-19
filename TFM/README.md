@@ -229,11 +229,14 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 Tiene una buena precisión global de 0.99. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
 
-|Models  | Features      | Type User  | precision  |  recall | f1-score | support  |  
+|Models  | Features | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
-|       | travel_minutes distance|   1        |    0.98    |   1.00  |   0.99   |  374466 |   
+|       | travel_minutes distance|   1        |  0.98  |  1.00  | 0.99 | 374466 |   
 |2     |  ageRange     |   2        |    0.00    |   0.00  |   0.00   |    4450  |      
-|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  1669724  |  
+|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  1669724|
+|   accuracy    |       |        |    |      | 0.99| 877989 |
+|   macro avg     | |            |0.66  |0.66   |  0.66   | 877989|
+|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 |
 
 Tiene una buena precisión global de 1.00. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
@@ -244,7 +247,9 @@ Tiene una buena precisión global de 1.00. No obstante, no tiene buena Precisió
 |-------|-------------  |------------|------------|---------|----------|----------|
 |       | travel_minutes|   1        |    0.65    |  0.87   |     0.74     |  4487  |   
 | 3    |  distance     |   2        |    0.80     |    0.52  |  0.63   |   4397   |      
-|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |   4396  |  
+|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |   4396  | |   accuracy    |       |        |    |      | 0.99| 877989 |
+|   macro avg     | |            |0.66  |0.66   |  0.66   | 877989|
+|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 | 
 
 No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
@@ -254,7 +259,9 @@ No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 |       | travel_minutes distance|   1        |       0.95     |   0.70  |   0.70    | 4487  |   
 |4     |  ageRange    |   2        |    0.76   |   0.97  |   0.85     |   4397  |      
 |       | count_travel  |   3        |    1.00    |    0.99 |   1.00   | 4396  |  
-
+|   accuracy    |       |        |    |      | 0.99| 877989 |
+|   macro avg     | |            |0.66  |0.66   |  0.66   | 877989|
+|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 |
 
 
 ## K Nearest Neighbor Classifer
@@ -266,14 +273,18 @@ No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 |-------|-------------  |------------|------------|---------|----------|----------|
 |       | travel_minutes|   1        |    0.99     |   1.00  |  0.99   |  160080  |   
 |1      |  distance     |   2        |    0.35    |    0.15   |  0.21   |   1874   |      
-|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
+|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  | |   accuracy    |       |        |    |      | 0.99| 877989 |
+|   macro avg     | |            |0.66  |0.66   |  0.66   | 877989|
+|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 | 
 
 
 |Models  | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
 |       | travel_minutes distance|   1        |     0.99    |   1.00  |   0.99   |  160080  |   
 |2     |  ageRange     |   2        |   0.40    |   0.23  |   0.29    |   1874   |      
-|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
+|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  | |   accuracy    |       |        |    |      | 0.99| 877989 |
+|   macro avg     | |            |0.66  |0.66   |  0.66   | 877989|
+|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 | 
 
 
 - **Balanceo de datos**
@@ -283,13 +294,19 @@ No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 |       | travel_minutes|   1        |     0.78     |  0.72 |   0.75  |  1837  |   
 | 3    |  distance     |   2        |      0.75    |   0.78 |     0.78   |   1927   |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  1928  |  
+|   accuracy    |       |        |    |      | 0.99| 877989 |
+|   macro avg     | |            |0.66  |0.66   |  0.66   | 877989|
+|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 |
+
 
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
 |       | travel_minutes distance|   1        |    0.89    |   0.79   |  0.84    |  1837 |   
 |4     |   ageRange    |   2        |   0.82 |   0.91  |   0.86  |  1927  |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  1928   |  
-
+|   accuracy    |       |        |    |      | 0.99| 877989 |
+|   macro avg     | |            |0.66  |0.66   |  0.66   | 877989|
+|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 |
 
 **Matriz de confusión del Modelo 4 con Balanceo de K Nearest Neighbor Classifer.**
 

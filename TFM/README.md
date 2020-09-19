@@ -218,7 +218,6 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 **Modelo 1:** Tiene una buena precisión global de 0.99. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
  
 
-
 |Models/Metrics | Features | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
 |       | travel_minutes|   1        |    0.98    |   1.00  |   0.99   |  160080  |   
@@ -229,7 +228,7 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 |     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 |
 
 
-
+**Modelo 2:** Tiene una buena precisión global de 1.00. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
 |Models  | Features | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -240,10 +239,10 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 |   macro avg     | |            |0.66  |0.66   |  0.66   | 877989|
 |     weighted avg  |  |        |0.99 |1.00  | 0.99 | 877989 |
 
-Tiene una buena precisión global de 1.00. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
+### Balanceo de datos
 
-- **Balanceo de datos**
+**Modelo 3:** En tipo de usuario 2 mejora su Recall.
 
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -254,8 +253,8 @@ Tiene una buena precisión global de 1.00. No obstante, no tiene buena Precisió
 |   macro avg     | |            |0.81  |0.80  |  0.79  | 13280|
 |     weighted avg  |  |        |0.81 | 0.80 | 0.79 | 13280 |
 
-No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
+**Modelo 4:** 
 
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -270,7 +269,9 @@ No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 ## K Nearest Neighbor Classifer
 
 
-- **Utilizando el total de los datos**
+### Utilizando el total de los datos
+
+**Modelo 1:** 
               
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -282,6 +283,8 @@ No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 |     weighted avg  |  |        |1.00  | 1.00 | 1.00  | 877989 |
 
 
+**Modelo 2:** 
+
 |Models  | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
 |       | travel_minutes distance|   1        |     0.99    |   1.00  |   0.99   |  160080  |   
@@ -292,7 +295,9 @@ No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 |     weighted avg  |  |        |1.00 | 1.00 | 1.00 | 877989 |
 
 
-- **Balanceo de datos**
+### Balanceo de datos
+
+**Modelo 3:** 
 
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -303,6 +308,7 @@ No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 |   macro avg     | |            |0.83 |0.83   |  0.83   | 5692
 |     weighted avg  |  |        |0.83 | 0.83 | 0.83 | 5692 |
 
+**Modelo 4:** 
 
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|

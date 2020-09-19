@@ -213,11 +213,10 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 
 ## Logistic Regression
 
+### Utilizando el total de los datos
 
-- **Utilizando el total de los datos**
-
-Modelo 1: Tiene una buena precisión global de 0.99. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
-========: 
+**Modelo 1:** Tiene una buena precisión global de 0.99. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
+ 
 
 
 |Models/Metrics | Features | Type User  | precision  |  recall | f1-score | support  |  

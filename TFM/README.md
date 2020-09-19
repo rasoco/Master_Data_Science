@@ -203,11 +203,11 @@ dtypes: float64(6), int64(6), object(8)
 ![Pairplot](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/4_image.png>)
 
 # Modeling
-Para la predección del tipo de usuario se han realizado modelos de Regresión Logística y K Nearest Neighbors Classifer conocido también como K Vecinos. Por un lado, *la Regresión Logística* se trata de un tipo de análisis de regresión utilizado para predecir el resultado de una variable categórica. Por otro lado, *K Vecinos* es un algoritmo que almacena todos los casos disponibles y clasifica los casos nuevos basándose en una medida de similitud. 
+Para la predección del tipo de usuario hemos utilizado diferentes técnicas de Machine Learning. Por un lado, *Regresión Logística* se trata de un tipo de análisis de regresión utilizado para predecir el resultado de una variable categórica. Por otro lado, *K Nearest Neighbor Classifer*, conocido también como *K Vecinos,* es un algoritmo que almacena todos los casos disponibles y clasifica los casos nuevos basándose en una medida de similitud. 
 
 Además, destacar que se ha utilizado algunos ML con tres variables independendientes y para otros cuatro variables.
 
-Cabe mencionar que se han realizado predicciones utilizando el total de los datos del dataset(2926629) y por otro lado, se ha realizado un balanceo de los datos(18972) en función del tipo de usuario con el objetivo de homogenizar las muestras.
+Cabe mencionar que se han realizado predicciones utilizando el total de los datos del dataset (2926629) y por otro lado, se ha realizado un balanceo de los datos (18972) en función del tipo de usuario con el objetivo de homogenizar las muestras.
 
 En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos decidido implementar el modelo 4 de K Nearest Neighbor Classifer con balanceo de datos ya que sus métricas son notablemente mejores frente al resto. 
 

@@ -246,7 +246,7 @@ Tiene una buena precisión global de 1.00. No obstante, no tiene buena Precisió
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
 |       | travel_minutes|   1        |    0.65    |  0.87   |     0.74     |  4487  |   
-| 3    |  distance     |   2        |    0.80     |    0.52  |  0.63   |   4397   |      
+| 3    |  distance     |   2        |    0.80     |    0.53  |  0.63   |   4397   |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |   4396  | 
 |   accuracy    |       |        |    |      | 0.80 | 13280 |
 |   macro avg     | |            |0.81  |0.80  |  0.79  | 13280|

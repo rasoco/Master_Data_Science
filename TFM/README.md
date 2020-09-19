@@ -324,7 +324,7 @@ En total se han hecho 8 modelos.
 
 Una vez analizadas las métricas de cada modelo, hemos decidido implementar el modelo 4 de K Nearest Neighbor Classifer con balanceo de datos y cuatro varialbes ya que sus métricas son notablemente mejores frente al resto. 
 
-**Matriz de confusión del Modelo 4 con Balanceo de K Nearest Neighbor Classifier.**
+**Matriz de confusión de K Nearest Neighbor Classifier del Modelo 4 con Balanceo.**
 
 ![Matriz de confunsión sin normalizar](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/6_image.png>)    ![Matriz de confunsión normalizada](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/5_image.png>)
 

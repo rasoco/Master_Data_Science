@@ -203,13 +203,15 @@ dtypes: float64(6), int64(6), object(8)
 ![Pairplot](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/4_image.png>)
 
 # Modeling
-Para la predección del tipo de usuario hemos utilizado diferentes técnicas de Machine Learning. Por un lado, *Regresión Logística* se trata de un tipo de análisis de regresión utilizado para predecir el resultado de una variable categórica. Por otro lado, *K Nearest Neighbor Classifer*, conocido también como *K Vecinos,* es un algoritmo que almacena todos los casos disponibles y clasifica los casos nuevos basándose en una medida de similitud. 
+Nuestro objetivo es crear un algoritmo que detecte si utilizas con frecuencia BiciMad (1), si eres usuario ocasional (2) o por el contrario, eres trabajador de la compañía (3).
 
-Además, destacar que se ha utilizado algunos ML con tres variables independendientes y para otros cuatro variables.
+Para ello, hemos utilizado diferentes técnicas de Machine Learning. Por un lado, *Regresión Logística* se trata de un tipo de análisis de regresión utilizado para predecir el resultado de una variable categórica. Por otro lado, *K Nearest Neighbor Classifer*, conocido también como *K Vecinos,* es un algoritmo que almacena todos los casos disponibles y clasifica los casos nuevos basándose en una medida de similitud. 
+
+Además, destacar que para algunos modelos se han utilizado tres variables independendientes y para otros cuatro variables.
 
 Cabe mencionar que se han realizado predicciones utilizando el total de los datos del dataset (2926629) y por otro lado, se ha realizado un balanceo de los datos (18972) en función del tipo de usuario con el objetivo de homogenizar las muestras.
 
-En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos decidido implementar el modelo 4 de K Nearest Neighbor Classifer con balanceo de datos ya que sus métricas son notablemente mejores frente al resto. 
+En total se han hecho 8 modelos.
 
 ## Logistic Regression
 
@@ -254,7 +256,7 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 |     weighted avg  |  |        |0.81 | 0.80 | 0.79 | 13280 |
 
 
-**Modelo 4:** 
+**Modelo 4:** En tipo de usuario 1 el recall disminuye.
 
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -271,7 +273,7 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 
 ### Utilizando el total de los datos
 
-**Modelo 1:** 
+**Modelo 1:** Tiene una buena precisión global de 1.00. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
               
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -283,7 +285,7 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 |     weighted avg  |  |        |1.00  | 1.00 | 1.00  | 877989 |
 
 
-**Modelo 2:** 
+**Modelo 2:** Tiene una buena precisión global de 1.00. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
 |Models  | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -297,7 +299,7 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 
 ### Balanceo de datos
 
-**Modelo 3:** 
+**Modelo 3:** Mejoran las métricas de Precisión, Recall y F1-score para los tres tipos de usuarios.
 
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -308,7 +310,7 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 |   macro avg     | |            |0.83 |0.83   |  0.83   | 5692
 |     weighted avg  |  |        |0.83 | 0.83 | 0.83 | 5692 |
 
-**Modelo 4:** 
+**Modelo 4:** Sus métricas son considerablemente buenas en comparación con el resto de los anteriores modelos. 
 
 |Models | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
@@ -319,6 +321,8 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 |   macro avg     | |            |0.90  |0.90  |  0.90  | 5692|
 |     weighted avg  |  |        |0.90 | 0.90 | 0.90 | 5692|
 
+
+Una vez analizadas las métricas de cada modelo, hemos decidido implementar el modelo 4 de K Nearest Neighbor Classifer con balanceo de datos y cuatro varialbes ya que sus métricas son notablemente mejores frente al resto. 
 
 **Matriz de confusión del Modelo 4 con Balanceo de K Nearest Neighbor Classifer.**
 
@@ -332,7 +336,11 @@ En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos 
 
 # Visualization
 
+Para la elaboración de la interfaz de este proyecto se ha creado un nuevo repositorio que puedes consultar en siguiente [link](https://github.com/rasoco/bicimad-project). Para ello, hemos utilizado Streamlit y Heroku como alojamiento web. 
 
+## Manual de usuario 
+
+Puedes consultar la aplicación web [aquí](https://bicimad-project.herokuapp.com/) 
 
 
 

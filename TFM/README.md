@@ -17,7 +17,7 @@
 
 
 # Introduction
-Mi interés por desarrollar un proyecto sobre la movilidad sostenible de Madrid surge porque soy aficionada a montar en bici y además por el volumen de datos que se puede manejar y analizar sobre los movimientos de los usuarios. En la búsqueda de datos encontre la base de datos abierta de [EMT Madrid](https://opendata.emtmadrid.es/Datos-estaticos/Datos-generales-(1)) en la cual tienes acceso al sistema de bicicletas públicas de Madrid conocido como BiciMad. Para obtener los datos de los puntos de estacionamientos me puse en contacto con el [Portal de datos abiertos del Ayuntamiento de Madrid](https://datos.madrid.es/sites/v/index.jsp?vgnextoid=e9b2a4059b4b7410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD) ya que los datos no estaban actualizados, fueron muy amables y a los pocos días los actualizaron. 
+Mi interés por desarrollar un proyecto sobre la movilidad sostenible de Madrid surge porque soy aficionada a montar en bici y además por el volumen de datos que se puede manejar y analizar sobre los movimientos de los usuarios. En la búsqueda de datos encontré la base de datos abierta de [EMT Madrid](https://opendata.emtmadrid.es/Datos-estaticos/Datos-generales-(1)) en la cual tienes acceso a los años y meses del sistema de bicicletas públicas de Madrid conocido como BiciMad. Para obtener los datos de los puntos de estacionamientos, me puse en contacto con el [Portal de datos abiertos del Ayuntamiento de Madrid](https://datos.madrid.es/sites/v/index.jsp?vgnextoid=e9b2a4059b4b7410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD) ya que los datos no estaban actualizados, fueron muy amables y a los pocos días los actualizaron. 
 
 Después de realizar un brainstorming sobre las diferentes líneas de estudios a realizar, obtuve los siguientes objetivos:
 
@@ -26,7 +26,7 @@ Después de realizar un brainstorming sobre las diferentes líneas de estudios a
 - Algoritmo que detecte el tipo de usuario.
 
 # Methodology and Tools
-El proyecto se ha realizado utilizando Google Colaboratory, es un entorno gratuito de Jupyter Notebook que no requiere configuración y se ejecuta en la nube. Para el desarrollo del código el lenguaje de programación que he usado ha sido Python para la limpieza, tratamiento, ejecución de datos así como las diferentes técnicas de Machine Learning. A continuación, indico las herramientas utilizadas:
+El proyecto se ha realizado utilizando Google Colaboratory, es un entorno gratuito de Jupyter Notebook que no requiere configuración y se ejecuta en la nube. Para el desarrollo del código el lenguaje de programación que hemos usado ha sido Python para la limpieza, tratamiento, ejecución de datos así como las diferentes técnicas de Machine Learning. A continuación, indico las herramientas utilizadas:
 
 - Entorno de desarrollo: Jupyter Notebook utilizandolo en Google Colaboratory
 - Lenguaje de programación: Python 3.6
@@ -63,7 +63,7 @@ El Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y
 - Número de la base de la que se desengancha la bicicleta.
 - Número de la estación en la que se engancha la bicicleta.
 - Número de la base en la que se engancha la bicicleta.
--  Franja horaria en la que se realiza el desenganche de la bicicleta.
+- Franja horaria en la que se realiza el desenganche de la bicicleta.
 - Tiempo total en segundos, entre el desenganche y el enganche de la bicicleta. 
 - Detalle del trayecto realizado por la bicicleta entre la estación de partida y la de destino, en formato GeoJSON. 
 - user_type: Número que indica el tipo de usuario que ha realizado el movimiento. Sus posibles valores son los siguientes:
@@ -84,8 +84,6 @@ El Dataset de BiciMad recoge los datos Enero 2018, codificados en formato JSON y
   * 6: El usuario tiene 66 años o más 
 
 - Código postal. El código postal del usuario que ha realizado el movimiento. 
-
-
 
 # Data Exploration 
 
@@ -159,7 +157,7 @@ dtypes: int64(7), object(4)
 
 *Unificación de datos de estacionamiento y datos de enero 2018*
 
-Se realizo un cruce de datos entre los puntos de estacionamientos y los datos del mes de enero de 2018 con el objetivo de explorarlos en conjunto así como se crearon nuevas variables como travel_minutes y count_travel.
+Se realizo un cruce de datos entre los puntos de estacionamientos y los datos del mes de enero de 2018 con el objetivo de explorarlos en conjunto así como se crearon nuevas variables como distance, travel_minutes y count_travel.
 
 ```python
 data.info()
@@ -205,15 +203,16 @@ dtypes: float64(6), int64(6), object(8)
 ![Pairplot](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/4_image.png>)
 
 # Modeling
-Se han realizado modelos de Regresión Logística y K Nearest Neighbors Classifer conocido también como K Vecinos. Por un lado, *la Regresión Logística* se trata de un tipo de análisis de regresión utilizado para predecir el resultado de una variable categórica. Por otro lado, *K Vecinos* es un algoritmo que almacena todos los casos disponibles y clasifica los casos nuevos basándose en una medida de similitud. 
+Para la predección del tipo de usuario se han realizado modelos de Regresión Logística y K Nearest Neighbors Classifer conocido también como K Vecinos. Por un lado, *la Regresión Logística* se trata de un tipo de análisis de regresión utilizado para predecir el resultado de una variable categórica. Por otro lado, *K Vecinos* es un algoritmo que almacena todos los casos disponibles y clasifica los casos nuevos basándose en una medida de similitud. 
 
-Además, destacar que se ha utilizado algunos modelos tres variables independendientes y para otros cuatro variables.
+Además, destacar que se ha utilizado algunos ML con tres variables independendientes y para otros cuatro variables.
 
-Cabe mencionar que se han realizado predicciones utilizando el total de los datos del dataset(2926629) y por otro lado, se ha realizado un balanceo de los datos(18972) en función del tipo de usuario con el objetivo de equiparar las muestras.
+Cabe mencionar que se han realizado predicciones utilizando el total de los datos del dataset(2926629) y por otro lado, se ha realizado un balanceo de los datos(18972) en función del tipo de usuario con el objetivo de homogenizar las muestras.
 
-En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos decidido implementar el modelo 4 de K Nearest Neighbor Classifer con balanceo de datos. 
+En total se han hecho 8 modelos, analizadas las métricas de cada modelo, hemos decidido implementar el modelo 4 de K Nearest Neighbor Classifer con balanceo de datos ya que sus métricas son notablemente mejores frente al resto. 
 
 ## Logistic Regression
+
 
 - **Utilizando el total de los datos**
 
@@ -235,6 +234,7 @@ Tiene una buena precisión global de 0.99. No obstante, no tiene buena Precisió
 
 Tiene una buena precisión global de 1.00. No obstante, no tiene buena Precisión, Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
+
 - **Balanceo de datos**
 
 |Models   | Features      | Type User  | precision  |  recall | f1-score | support  |  
@@ -251,8 +251,6 @@ No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 |       | travel_minutes distance|   1        |       0.95     |   0.70  |   0.70    | 4487  |   
 |4     |  ageRange    |   2        |    0.76   |   0.97  |   0.85     |   4397  |      
 |       | count_travel  |   3        |    1.00    |    0.99 |   1.00   | 4396  |  
-
-Tiene una buena precisión global de 0.88.
 
 
 
@@ -273,6 +271,7 @@ Tiene una buena precisión global de 0.88.
 |       | travel_minutes distance|   1        |     0.99    |   1.00  |   0.99   |  160080  |   
 |2     |  ageRange     |   2        |   0.40    |   0.23  |   0.29    |   1874   |      
 |       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  |  
+
 
 - **Balanceo de datos**
 

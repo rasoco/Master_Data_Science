@@ -332,12 +332,18 @@ Una vez analizadas las métricas de cada modelo, hemos decidido implementar el m
 
 # Visualization
 
-Para la elaboración de la interfaz de este proyecto se ha creado un nuevo repositorio que puedes consultar en siguiente [link](https://github.com/rasoco/bicimad-project). Para ello, hemos utilizado Streamlit y Heroku como alojamiento web. 
+Para la elaboración de la interfaz de este proyecto se ha creado un nuevo repositorio que puedes consultar en el siguiente [link](https://github.com/rasoco/bicimad-project). Para ello, hemos utilizado Streamlit y Heroku como alojamiento web. 
 
 ## Manual de usuario 
 
-Puedes consultar la aplicación web [aquí](https://bicimad-project.herokuapp.com/) 
+Puedes utilizar la aplicación web [aquí](https://bicimad-project.herokuapp.com/). 
 
+En el **Menu**, selecciona en el desplegable:
 
+![imagen7](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/7_image.png>)
+
+- Si quieres consultar los puntos de estacionamientos de BiciMad, accede a *BiciMadStations*![imagen8 (<https://github.com/rasoco/master_data_science/blob/master/TFM/img/8_image.png>)
+
+- Si quieres saber que tipo de usuario eres de BiciMad, accede a *Do you use BiciMad*![imagen9](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/9_image.png>)
 
 

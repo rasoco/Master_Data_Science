@@ -318,7 +318,7 @@ No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
 
 
-![Matriz de confunsión sin normalizar](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/5_image.png>)
+![Matriz de confunsión normalizada](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/5_image.png>)
 
 
 

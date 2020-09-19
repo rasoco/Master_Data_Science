@@ -326,11 +326,7 @@ Una vez analizadas las métricas de cada modelo, hemos decidido implementar el m
 
 **Matriz de confusión del Modelo 4 con Balanceo de K Nearest Neighbor Classifer.**
 
-![Matriz de confunsión sin normalizar](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/6_image.png>)
-
-
-
-![Matriz de confunsión normalizada](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/5_image.png>)
+![Matriz de confunsión sin normalizar](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/6_image.png>)  ![Matriz de confunsión normalizada](<https://github.com/rasoco/master_data_science/blob/master/TFM/img/5_image.png>)
 
 
 

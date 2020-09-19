@@ -247,9 +247,10 @@ Tiene una buena precisión global de 1.00. No obstante, no tiene buena Precisió
 |-------|-------------  |------------|------------|---------|----------|----------|
 |       | travel_minutes|   1        |    0.65    |  0.87   |     0.74     |  4487  |   
 | 3    |  distance     |   2        |    0.80     |    0.52  |  0.63   |   4397   |      
-|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |   4396  | |   accuracy    |       |        |    |      | 0.99| 877989 |
+|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |   4396  | 
+|   accuracy    |       |        |    |      | 0.99| 877989 |
 |   macro avg     | |            |0.66  |0.66   |  0.66   | 877989|
-|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 | 
+|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 |
 
 No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 
@@ -273,18 +274,20 @@ No tiene buena Recall ni f1-score cuando tiene que predecir en el perfil 2.
 |-------|-------------  |------------|------------|---------|----------|----------|
 |       | travel_minutes|   1        |    0.99     |   1.00  |  0.99   |  160080  |   
 |1      |  distance     |   2        |    0.35    |    0.15   |  0.21   |   1874   |      
-|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  | |   accuracy    |       |        |    |      | 0.99| 877989 |
+|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  | 
+|   accuracy    |       |        |    |      | 0.99| 877989 |
 |   macro avg     | |            |0.66  |0.66   |  0.66   | 877989|
-|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 | 
+|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 |
 
 
 |Models  | Features      | Type User  | precision  |  recall | f1-score | support  |  
 |-------|-------------  |------------|------------|---------|----------|----------|
 |       | travel_minutes distance|   1        |     0.99    |   1.00  |   0.99   |  160080  |   
 |2     |  ageRange     |   2        |   0.40    |   0.23  |   0.29    |   1874   |      
-|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  | |   accuracy    |       |        |    |      | 0.99| 877989 |
+|       | count_travel  |   3        |    1.00    |   1.00  |   1.00   |  716035  | 
+|   accuracy    |       |        |    |      | 0.99| 877989 |
 |   macro avg     | |            |0.66  |0.66   |  0.66   | 877989|
-|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 | 
+|     weighted avg  |  |        |0.99 | 0.99 | 0.99 | 877989 |
 
 
 - **Balanceo de datos**
